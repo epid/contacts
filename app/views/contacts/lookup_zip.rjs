@@ -1,0 +1,3 @@
+page['contact_city'].value = @csp[:city]
+page['contact_state'].value = @csp[:state]
+page['contact_parish'].value = @csp[:parish]

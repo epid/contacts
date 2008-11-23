@@ -49,4 +49,10 @@ class ContactsController < ApplicationController
     @contact.destroy
     redirect_to contacts_url
   end
+
+  def lookup_zip
+    entry = Zipcode.find_by_zipcode(params[:zip])
+    @csp = { :city => entry.city, :state => entry.state, :parish => entry.county }
+  end
+
 end
