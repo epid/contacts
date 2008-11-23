@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @contact.name %>
+</p>
+
+<p>
+  <b>Street:</b>
+  <%=h @contact.street %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @contact.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @contact.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%=h @contact.zip %>
+</p>
+
+<p>
+  <b>Parish:</b>
+  <%=h @contact.parish %>
+</p>
+
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>
