@@ -6,7 +6,7 @@ class CreateContacts < ActiveRecord::Migration
       t.string :city
       t.string :state
       t.string :zip
-      t.string :parish
+      t.string :county
 
       t.timestamps
     end

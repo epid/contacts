@@ -6,7 +6,7 @@ one:
   city: MyString
   state: MyString
   zip: MyString
-  parish: MyString
+  county: MyString
 
 two:
   name: MyString
@@ -14,4 +14,4 @@ two:
   city: MyString
   state: MyString
   zip: MyString
-  parish: MyString
+  county: MyString

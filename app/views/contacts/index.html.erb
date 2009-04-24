@@ -7,7 +7,7 @@
     <th>City</th>
     <th>State</th>
     <th>Zip</th>
-    <th>Parish</th>
+    <th>County</th>
   </tr>
 
 <% for contact in @contacts %>
@@ -17,7 +17,7 @@
     <td><%=h contact.city %></td>
     <td><%=h contact.state %></td>
     <td><%=h contact.zip %></td>
-    <td><%=h contact.parish %></td>
+    <td><%=h contact.county %></td>
     <td><%= link_to 'Show', contact %></td>
     <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
     <td><%= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete %></td>

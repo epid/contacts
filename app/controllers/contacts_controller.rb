@@ -53,9 +53,9 @@ class ContactsController < ApplicationController
   def lookup_zip
     if params[:zip].size == 5
     	entry = Zipcode.find_by_zipcode(params[:zip], :limit => 1)
-    	@csp = { :city => entry.city, :state => entry.state, :parish => entry.county }
+    	@csc = { :city => entry.city, :state => entry.state, :county => entry.county }
     else
-        @csp = { :city => 'NOT FOUND', :state => 'NOT FOUND', :parish => 'NOT FOUND' }
+        @csc = { :city => 'NOT FOUND', :state => 'NOT FOUND', :county => 'NOT FOUND' }
     end
   end
 

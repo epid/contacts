@@ -1,6 +1,8 @@
-This is a simple test app I wrote to try looking up city, state and county (parish)
-information based on zip code entry. Basically, when you are editing a contact, type
-in the zip and the site will do an AJAX lookup and auto-fill the city, state and county.
+This is a simple test app I wrote to try looking up city, state and county information
+based on zip code entry. Basically, when you are editing a contact, type in the zip and
+the site will do an AJAX lookup and auto-fill the city, state and county.
+
+
 
 Make sure that the zipcode database is populated using the .dump file in the db folder first.
   $ rake db:migrate
