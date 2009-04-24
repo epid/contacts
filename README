@@ -3,3 +3,5 @@ information based on zip code entry. Basically, when you are editing a contact, 
 in the zip and the site will do an AJAX lookup and auto-fill the city, state and county.
 
 Make sure that the zipcode database is populated using the .dump file in the db folder first.
+  $ rake db:migrate
+  $ zcat db/zipcodes.dump.gz | sqlite3 db/development.sqlite3
